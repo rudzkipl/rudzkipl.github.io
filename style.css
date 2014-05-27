@@ -278,6 +278,10 @@ nav ul a {
 #footer .linked-in a {
 	background-position: -170px 7px;
 }
+#footer .github a {
+	background-position: -202px 7px;
+}
+
 #footer .twitter a:hover {
 	background-position: 0 -21px;
 }
@@ -295,6 +299,9 @@ nav ul a {
 }
 #footer .linked-in a:hover {
 	background-position: -170px -21px;
+}
+#footer .github a:hover {
+	background-position: -202px -20px;
 }
 #map {
 	overflow:hidden;
