@@ -1,56 +1,33 @@
-.main_h {
-  position: fixed;
-  top: 0px;
-  max-height: 70px;
-  z-index: 999;
-  width: 100%;
-  padding-top: 17px;
-  background: none;
-  overflow: hidden;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  opacity: 0;
-  top: -100px;
-  padding-bottom: 6px;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #8f8f8f;
+  background: white;
+  font-family: "Cardo", serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
 }
-@media only screen and (max-width: 766px) {
-  .main_h {
-    padding-top: 25px;
-  }
+
+p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 2;
 }
 
-.open-nav {
-  max-height: 400px !important;
-}
-.open-nav .mobile-toggle {
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-}
 
-.sticky {
-  background-color: rgba(255, 255, 255, 0.93);
-  opacity: 1;
-  top: 0px;
-  border-bottom: 1px solid gainsboro;
-}
-
-.logo {
-  width: 50px;
-  font-size: 25px;
-  color: #8f8f8f;
-  text-transform: uppercase;
-  float: left;
-  display: block;
-  margin-top: 0;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-@media only screen and (max-width: 766px) {
-  .logo {
-    float: none;
-  }
-}
 
 nav {
   float: right;
@@ -128,33 +105,59 @@ nav ul a {
   padding: 0 2%;
 }
 
-* {
-  box-sizing: border-box;
-}
 
-body {
-  color: #8f8f8f;
-  background: white;
-  font-family: "Cardo", serif;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 30px;
-  line-height: 1.8;
-  text-transform: uppercase;
+.main_h {
+  position: fixed;
+  top: 0px;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
   font-family: "Montserrat", sans-serif;
 }
+@media only screen and (max-width: 766px) {
+  .main_h {
+    padding-top: 25px;
+  }
+}
 
-p {
-  margin-bottom: 20px;
-  font-size: 17px;
-  line-height: 2;
+.open-nav {
+  max-height: 400px !important;
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.logo {
+  width: 220px;
+  font-size: 22px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 0px;
+  line-height: 1;
+
+}
+@media only screen and (max-width: 766px) {
+  .logo {
+    float: none;
+  }
 }
 
 .content {
@@ -163,14 +166,14 @@ p {
 
 .hero {
   position: relative;
-  background: url(http://www.philippefercha.com/cd/toggle-menu-bg.jpg) no-repeat center center fixed;
+  background: url(img/people.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   text-align: center;
   color: #fff;
   padding-top: 110px;
-  min-height: 500px;
+  min-height: 700px;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
 }
@@ -244,4 +247,87 @@ p {
     -ms-transform: translateY(20px);
     transform: translateY(20px);
   }
+}
+
+/* Footer
+------------------------------------------------------------------------------*/
+
+#footer {
+	background: #191f21;
+	text-align: center;
+	color: #4b5355;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 40px 0 41px 0;
+	text-transform: uppercase;
+}
+
+#footer p {
+	padding: 0 0 22px 0;
+}
+
+#footer li {
+	display: inline-block;
+	padding: 0 3px 0 4px;
+}
+
+#footer a {
+	height: 34px;
+	width: 34px;
+	display: block;
+	border-radius: 50px;
+	background: #4b5456 url(img/ico_social.png) no-repeat 0 7px;
+}
+
+#footer .twitter a {
+	background-position: 0 7px;
+}
+
+#footer .facebook a {
+	background-position: -34px 7px;
+}
+
+#footer .pinterest a {
+	background-position: -68px 7px;
+}
+
+#footer .google-plus a {
+	background-position: -102px 7px;
+}
+
+#footer .ball a {
+	background-position: -136px 7px;
+}
+
+#footer .linked-in a {
+	background-position: -170px 7px;
+}
+
+#footer .twitter a:hover {
+	background-position: 0 -21px;
+}
+
+#footer .facebook a:hover {
+	background-position: -34px -21px;
+}
+
+#footer .pinterest a:hover {
+	background-position: -68px -21px;
+}
+
+#footer .google-plus a:hover {
+	background-position: -102px -21px;
+}
+
+#footer .ball a:hover {
+	background-position: -136px -21px;
+}
+
+#footer .linked-in a:hover {
+	background-position: -170px -21px;
+}
+
+#map{
+
+  height:450px;
 }
